@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 
 import "./../reset";
 import Search from "./../containers/SearchContainer";
+import Results from "./../components/Results";
 import reducers from "./../reducers/";
 
 const store = createStore(reducers);
@@ -19,6 +20,7 @@ class App extends React.Component<Props, State> {
                 <Wrapper>
                     <Title>TypeTris</Title>
                     <Search />
+                    <Results />
                 </Wrapper>
             </Provider>
         );

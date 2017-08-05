@@ -1,12 +1,15 @@
 import * as React from "react";
 import { NavContainer, Input, Label } from "./styles";
 
-interface Props {}
+interface Props {
+    value: string;
+    handleChange: (val: string) => void;
+}
 
-export default (props: Props) =>
+export default ({ value, handleChange }: Props) =>
     <NavContainer>
         <Label>
             Search:
-            <Input />
+            <Input onChange={e => handleChange(e.currentTarget.value)} value={value} />
         </Label>
     </NavContainer>;
