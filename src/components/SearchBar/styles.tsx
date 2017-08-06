@@ -1,13 +1,12 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import { Button, shadowing } from "./../Common/styles";
 
-export const shadowing = css`
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-`;
+export const SearchButton = Button.extend`background-color: #1976d2;`;
 
 export const NavContainer = styled.nav`
     width: 100%;
-    height: 3em;
-    background-color: goldenrod;
+    min-height: 3em;
+    background-color: #2196F3;
     display: flex;
     justify-content: center;
     padding: 0.2em;
@@ -18,7 +17,7 @@ export const NavContainer = styled.nav`
 
 export const Input = styled.input`
     height: 2.0em;
-    width: 50em;
+    width: 100%;
     padding-left: 1em;
     border-radius: 3px;
     border: none;
