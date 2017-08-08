@@ -7,11 +7,11 @@ interface Props {
     handleChange: (selected: string) => void;
 }
 
-export default ({ categories, handleChange }: Props) => (
-<Select onChange={({ currentTarget: { value } }) => handleChange(value)}>
+export default ({ categories, handleChange }: Props) =>
+    <Select onChange={({ currentTarget: { value } }) => handleChange(value)}>
         {categories.map((category, index) =>
             <Option key={index}>
                 {category}
             </Option>,
         )}
-    </Select>);
+    </Select>;

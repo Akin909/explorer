@@ -8,7 +8,9 @@ export const NavContainer = styled.nav`
     min-height: 3em;
     background-color: #2196F3;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0.2em;
     position: absolute;
     top: 0;
@@ -29,4 +31,7 @@ export const Label = styled.label`
     width: 70%;
     height: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
