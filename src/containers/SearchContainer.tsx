@@ -1,5 +1,5 @@
 import * as React from "react";
-import SearchBar from "./../components/SearchBar";
+import NavBar from "./../components/NavBar";
 
 interface State {
     searchTerm: string;
@@ -24,7 +24,7 @@ export default class SearchContainer extends React.Component<Props, State> {
 
     public render() {
         return (
-            <SearchBar
+            <NavBar
                 handleChange={this.handleChange}
                 value={this.state.searchTerm}
                 handleSelectChange={this.handleSelectChange}

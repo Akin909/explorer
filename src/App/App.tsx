@@ -18,7 +18,7 @@ class App extends React.Component<Props, State> {
         return (
             <Provider store={store}>
                 <Wrapper>
-                    <Title>TypeTris</Title>
+                    <Title>The Healthy Nerd</Title>
                     <Search />
                     <Results />
                 </Wrapper>
